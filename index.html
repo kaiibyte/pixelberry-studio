@@ -23,6 +23,30 @@ footer{border-top:1px solid var(--line);padding:28px 5vw;color:var(--muted);font
 .reveal{opacity:0;transform:translateY(32px) scale(.985);filter:blur(5px);transition:opacity .9s var(--ease),transform .9s var(--ease),filter .9s var(--ease)}.reveal.visible{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}.delay1{transition-delay:.12s}.delay2{transition-delay:.24s}.delay3{transition-delay:.36s}
 @media(max-width:760px){header{padding:13px 5vw}.navlinks{display:none;position:absolute;top:65px;left:5vw;right:5vw;padding:20px;background:#1a152aef;border:1px solid var(--line);border-radius:20px;flex-direction:column;align-items:stretch;gap:18px;backdrop-filter:blur(20px)}.navlinks.open{display:flex}.navlinks .nav-cta{text-align:center}.menu{display:block}.hero{min-height:auto;padding:140px 0 70px;grid-template-columns:1fr;gap:5px}.hero-art{height:300px;grid-row:1}.core{width:155px;height:155px;border-radius:43px}.core svg{width:95px}.glass-orbit{width:260px;height:260px}h1{letter-spacing:-2.8px;margin:18px 0}.hero-copy{font-size:15px}.section{padding:72px 0}.section-head{display:block}.section-intro{margin-top:14px}.projects{grid-template-columns:1fr}.project{min-height:285px}.about-panel{grid-template-columns:1fr;padding:30px 24px;gap:24px}.about-panel h2{font-size:34px}.support{margin:65px 0 35px;padding:48px 20px}.foot{flex-direction:column;text-align:center}.orb.one{right:-230px}.orb.two{left:-210px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none;filter:none}}
+
+/* Dark liquid-glass refresh */
+:root{--bg:#050507;--panel:rgba(20,20,25,.58);--panel2:rgba(27,25,34,.62);--text:#f7f7fb;--muted:#a5a4b0;--purple:#b9a0ff;--pink:#d7c5ff;--line:rgba(255,255,255,.12)}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",system-ui,sans-serif;font-weight:600;background:#050507}
+body:before{background:radial-gradient(ellipse at 18% 8%,rgba(112,83,170,.23),transparent 38%),radial-gradient(ellipse at 86% 48%,rgba(75,70,112,.2),transparent 42%),radial-gradient(ellipse at 50% 100%,rgba(95,69,145,.13),transparent 45%),#050507;filter:blur(24px);transform:scale(1.08)}
+h1,h2,h3,.brand,.project h3,.about-panel h2,.support h2{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display",system-ui,sans-serif;font-weight:800;letter-spacing:-.045em}
+p,.hero-copy,.section-intro,.project p,.about-panel p,.support p{font-weight:500}
+header.scrolled{background:rgba(8,8,12,.54);backdrop-filter:blur(32px) saturate(160%);-webkit-backdrop-filter:blur(32px) saturate(160%);border-bottom:1px solid rgba(255,255,255,.1)}
+.nav-cta,.primary,.secondary{background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(28px) saturate(180%);-webkit-backdrop-filter:blur(28px) saturate(180%);box-shadow:inset 0 1px 0 rgba(255,255,255,.18),0 10px 35px rgba(0,0,0,.28);font-weight:800}
+.nav-cta,.primary{background:linear-gradient(135deg,rgba(176,145,255,.28),rgba(115,91,168,.18));border-color:rgba(204,185,255,.32)}
+.nav-cta:hover,.primary:hover,.secondary:hover{transform:translateY(-3px) scale(1.015);background:rgba(190,165,255,.2);box-shadow:inset 0 1px 0 rgba(255,255,255,.26),0 16px 42px rgba(0,0,0,.38)}
+.secondary{background:rgba(255,255,255,.055)}
+.project,.about-panel,.support,.value,.eyebrow,.navlinks.open{background:rgba(255,255,255,.045);backdrop-filter:blur(30px) saturate(155%);-webkit-backdrop-filter:blur(30px) saturate(155%);border-color:rgba(255,255,255,.12);box-shadow:inset 0 1px 0 rgba(255,255,255,.075),0 18px 55px rgba(0,0,0,.22)}
+.project:hover{background:rgba(255,255,255,.075);border-color:rgba(205,185,255,.3)}
+.about-panel{background:rgba(255,255,255,.04)}
+.support{background:radial-gradient(ellipse at 50% 0%,rgba(155,117,239,.13),transparent 65%),rgba(255,255,255,.045)}
+.orb{filter:blur(65px);opacity:.75}
+.core{background:linear-gradient(145deg,rgba(196,174,255,.8),rgba(91,61,148,.72));backdrop-filter:blur(25px);border:1px solid rgba(255,255,255,.25);box-shadow:inset 0 2px 3px rgba(255,255,255,.5),0 35px 100px rgba(93,65,145,.3)}
+.project-icon{box-shadow:inset 0 1px 0 rgba(255,255,255,.3),0 12px 30px rgba(0,0,0,.2)}
+.status,.status.build{backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+button,a{-webkit-tap-highlight-color:transparent}
+button:active,.primary:active,.secondary:active,.nav-cta:active,.project-link:active{transform:scale(.97)}
+@media(max-width:760px){.navlinks{background:rgba(12,11,17,.72);backdrop-filter:blur(34px) saturate(180%);-webkit-backdrop-filter:blur(34px) saturate(180%);box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 20px 55px rgba(0,0,0,.4)}}
+
 </style>
 </head>
 <body>
